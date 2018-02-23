@@ -17,7 +17,7 @@ $ADCred = Get-Credential -UserName 'campus\sme47' -Message "please enter passwor
 
 $users = Import-Csv -Path 'C:\temp\20180215 AW Leavers list with logonids for Lucy.csv'
 $fimUsers = @()
-foreach($user in $users[0]) {
+foreach($user in $users) {
 
     $personelNo = $user.pern
 
